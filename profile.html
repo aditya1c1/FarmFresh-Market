@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile - FarmFresh Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <h1>FarmFresh Market</h1>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="profile.html">Profile</a>
+            <a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        </div>
+        <span class="user-greet" id="nav-user-greet"></span>
+    </nav>
+    <main>
+        <div class="profile-card" id="profile-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Avatar">
+            <h2>Your Profile</h2>
+            <label>
+                Name: <input type="text" id="profile-name" autocomplete="name">
+            </label><br>
+            <label>
+                Email: <input type="email" id="profile-email" autocomplete="email">
+            </label><br>
+            <button id="profile-save">Save</button>
+            <div id="profile-msg" style="color: green; margin-top: 0.7rem;"></div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 FarmFresh Market. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
